@@ -57,6 +57,9 @@ a{
 	width: 50px;
 }
 
-svg{
-	width: 2rem;
+:root{
+	--primaryColor:#ee4a4a;
+	--secondaryColor:rgb(121, 129, 241);
+	--titleColor:#000;
+	--subtitleColor:#746e6e;
 }
