@@ -107,6 +107,7 @@ aside, .main, .rightSidebar{
 
 aside{
 	height: 100vh;
+	position: relative;
 }
 .top{
 	position: relative;
@@ -133,6 +134,11 @@ aside{
 	color: var(--light-red);
 }
 
+.sidebar{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
 .sidebar a{
 	color: var(--text-body-color);
 }
