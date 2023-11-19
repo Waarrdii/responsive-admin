@@ -58,7 +58,7 @@ table {
 --white: #FFFFFFff;
 
 --tropical-indigo: #7380ECff;
---antiflash-white: #F6F6F9ff;
+--antiflash-white: #e9ecef;
 --white-2: #FFFFFFff;
 --antiflash-white-2: #F0F0F4ff;
 --aquamarine: #41F1B6ff;
@@ -94,7 +94,7 @@ body{
 	width: 100vw;
 	height: 100vh;
 	font-size: 1.5rem;
-	background-color: #f6f6f9;
+	background-color: var(--antiflash-white);
 }
 
 .container{
@@ -111,8 +111,8 @@ aside{
 }
 .top{
 	position: relative;
+	top: 1rem;
 	height: 6rem;
-
 }
 .logo{
 	display: flex;
@@ -136,8 +136,7 @@ aside{
 
 .sidebar{
 	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+	top: 10rem;
 }
 .sidebar a{
 	color: var(--text-body-color);
@@ -146,5 +145,10 @@ aside{
 .sidebar a{
 	display: flex;
 	gap: 1rem;
-	padding: 0 0 2rem 6rem;
+	margin-left: 6rem;
+	margin-bottom: 2rem;
+}
+
+.sidebar a:last-child{
+	margin-top: 10rem;
 }
