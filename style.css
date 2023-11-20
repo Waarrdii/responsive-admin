@@ -138,3 +138,7 @@ aside{
   height: 80vh;
   background: var(--text-body-color);
   }
+  
+  .sidebar a{
+    display: flex;
+  }
