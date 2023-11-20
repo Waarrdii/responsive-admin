@@ -142,3 +142,7 @@ aside{
   .sidebar a{
     display: flex;
   }
+  
+  .sidebar a:lastchild{
+    margin-top: auto;
+  }
