@@ -134,21 +134,4 @@ aside{
 	color: var(--light-red);
 }
 
-.sidebar{
-	position: absolute;
-	top: 10rem;
-}
-.sidebar a{
-	color: var(--text-body-color);
-}
-
-.sidebar a{
-	display: flex;
-	gap: 1rem;
-	margin-left: 6rem;
-	margin-bottom: 2rem;
-}
-
-.sidebar a:last-child{
-	margin-top: 10rem;
-}
+.top
