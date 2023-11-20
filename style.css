@@ -137,4 +137,7 @@ aside{
 .sidebar{
   height: 80vh;
   background: var(--text-body-color);
+  display: flex;
+  flex-direction: column;
+  
 }
