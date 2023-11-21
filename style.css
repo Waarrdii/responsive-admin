@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 14px;
+	
 	font: inherit;
 	vertical-align: baseline;
 	text-decoration: none;
@@ -71,13 +71,18 @@ aside .top .logo img{
 --light-coral: #f28482ff;
 
 --sidebar-height : calc(100vh - 100px);
---regular-padding : 1rem;
---sidebar : 3rem;
+--padding-1:1rem;
+--padding-2:1.2rem;
+--padding-3:1.5rem;
+--padding-4:3rem;
 }
 
 /* end css reset */
 *{
 	box-sizing: border-box;
+}
+html{
+	font-size: 14px;
 }
 .container{
 	display: grid;
@@ -124,7 +129,7 @@ aside .top .logo{
 .sidebar  a{
 	display: flex;
 	align-items: center;
-	margin-left: var(--sidebar);
+	margin-left: var(--padding-4);
 	font-size: 1.2rem;
 	gap: 1rem;
 	padding: 1rem 1.2rem;
@@ -152,4 +157,16 @@ aside .top .logo{
 	margin-left : 0;
 	left: 50%;
 	transform: translateX(-50%);
+}
+
+@media (max-width:1366px) {
+	.sidebar{
+		padding-top: var(--padding-1);
+	}
+	.sidebar a{
+		font-size: 1rem;
+		padding: .8rem 1rem;
+		margin-left: 5rem;
+	}
+
 }
