@@ -23,10 +23,12 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 	text-decoration: none;
+	color: var(--eerie-black);
+	text-transform: capitalize;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav, section span {
 	display: block;
 }
 body {
@@ -48,12 +50,95 @@ table {
 	border-spacing: 0;
 }
 
-/* end css reset */
-
 aside .top .logo img{
-	width: 5%;
+	width: 30%;
 }
 
 :root{
-	
+--seasalt: #f8f9faff;
+--antiflash-white: #e9ecefff;
+--platinum: #dee2e6ff;
+--french-gray: #ced4daff;
+--french-gray-2: #adb5bdff;
+--slate-gray: #6c757dff;
+--outer-space: #495057ff;
+--onyx: #343a40ff;
+--eerie-black: #212529ff;
+--hunyadi-yellow: #f6bd60ff;
+--linen: #f7ede2ff;
+--tea-rose-red: #f5cac3ff;
+--cambridge-blue: #84a59dff;
+--light-coral: #f28482ff;
+
+--sidebar-height : calc(100vh - 100px);
+--regular-padding : 1rem;
+--sidebar : 3rem;
+}
+
+/* end css reset */
+*{
+	box-sizing: border-box;
+}
+.container{
+	display: grid;
+	grid-template-columns: 250px 1fr 200px;
+}
+aside{
+	height: 100vh;
+	border-right: 1px solid var(--french-gray-2);
+}
+
+/* logo */
+aside .top{
+	height: 100px;
+	padding: 1rem 0rem 0 1.2rem;
+}
+aside .top .logo{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.company-title h2{
+	font-size: 1.5rem;
+	font-weight: 800;
+}
+.company-title .line-title{
+	border-top: 1px solid var(--eerie-black);
+}
+.company-title span{
+	margin-left: 1rem;
+	font-size: 1.5rem;
+	font-weight: 800;
+	color: var(--light-coral);
+}
+
+
+
+/* end of logo */
+.sidebar{
+	height: var(--sidebar-height);
+	position: relative;
+	padding-top: 3rem;
+}
+.sidebar  a{
+	display: flex;
+	align-items: center;
+	margin-left: var(--sidebar);
+	font-size: 1.2rem;
+	gap: 1rem;
+	padding: 1rem 1.2rem;
+}
+
+.sidebar  a:hover:nth-child(-n+9){
+	background-color: rgba(242, 132, 130, .3);
+	transition: .2 ease-in-out;
+}
+.sidebar a:last-child{
+	position: absolute;
+	padding: 0;
+	bottom: 20px;
+	margin-left : 0;
+	left: 50%;
+	transform: translateX(-50%);
 }
