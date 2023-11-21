@@ -128,11 +128,22 @@ aside .top .logo{
 	font-size: 1.2rem;
 	gap: 1rem;
 	padding: 1rem 1.2rem;
+
 }
 
 .sidebar  a:hover:nth-child(-n+9){
 	background-color: rgba(242, 132, 130, .3);
 	transition: .2 ease-in-out;
+	border-left: 10px solid var(--light-coral);
+	color: var(--light-coral);
+}
+
+.sidebar a:hover h3{
+	color: var(--light-coral);
+}
+
+.sidebar a:hover span{
+	color: var(--light-coral);
 }
 .sidebar a:last-child{
 	position: absolute;
