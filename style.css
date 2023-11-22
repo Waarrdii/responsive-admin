@@ -84,9 +84,12 @@ aside .top .logo img{
 html{
 	font-size: 14px;
 }
+body{
+	background-color: var(--seasalt);
+}
 .container{
 	display: grid;
-	grid-template-columns: 250px 1fr 200px;
+	grid-template-columns: 250px 1fr 400px;
 }
 aside{
 	height: 100vh;
@@ -158,6 +161,40 @@ aside .top .logo{
 	left: 50%;
 	transform: translateX(-50%);
 }
+
+/* main dashboard */
+.main{
+	padding: 0 2rem 0;
+}
+.main h1{
+	font-size: 2.2rem;
+	font-weight: 800;
+	padding: var(--padding-1) 0 var(--padding-2);
+}
+
+
+
+.main .card{
+	display: flex;
+	height: 20vh;
+	flex-wrap: wrap;
+	gap: 2rem;
+}
+
+.total-sales, .total-expense, .total-income{
+	height: 100%;
+	background-color: #fff;
+	flex-grow: 1;
+	border-radius: 1.4rem;
+	padding: 2rem;
+	box-shadow: ;
+}
+
+/* sidebar kanan */
+.right-sidebar{
+	background-color: var(--cambridge-blue);
+}
+
 
 @media (max-width:1366px) {
 	.sidebar{
