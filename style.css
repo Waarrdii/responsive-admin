@@ -204,6 +204,17 @@ aside .top .logo{
 	transform: translate(-50%, -50%);
 }
 
+.total-sales svg{
+	float: right;
+}
+#sales circle{
+	stroke-width: 1rem;
+	stroke: var(--light-coral);
+	fill: transparent;
+	stroke-dasharray: 314.2;
+	stroke-dashoffset: 62.8;
+	
+}
 
 /* sidebar kanan */
 .right-sidebar{
