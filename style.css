@@ -176,7 +176,7 @@ aside .top .logo{
 
 .main .card{
 	display: flex;
-	height: 20vh;
+	height: 25vh;
 	flex-wrap: wrap;
 	gap: 2rem;
 }
@@ -187,8 +187,29 @@ aside .top .logo{
 	flex-grow: 1;
 	border-radius: 1.4rem;
 	padding: 2rem;
-	box-shadow: ;
+	
 }
+
+.data div{
+	width: 6rem;
+	height: 6rem;
+	background-color: var(--light-coral);
+	border-radius: 50%;
+}
+
+.data svg{
+
+	border-radius: 10px;
+	width: 6rem;
+	height: 6rem;
+	background-color: var(--light-coral);
+}
+
+circle{
+
+fill: var(--antiflash-white);
+}
+
 
 /* sidebar kanan */
 .right-sidebar{
