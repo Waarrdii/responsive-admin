@@ -191,23 +191,17 @@ aside .top .logo{
 }
 
 .data div{
-	width: 6rem;
-	height: 6rem;
-	background-color: var(--light-coral);
-	
-}
-
-.data svg{
-
-	border-radius: 10px;
-	
+	width: 4rem;
+	height: 4rem;
 	background-color: var(--light-coral);
 	border-radius: 50%;
+	
 }
 
-circle{
-
-fill: var(--antiflash-white);
+.data div img{
+	margin-left: 50%;
+	margin-top: 50%;
+	transform: translate(-50%, -50%);
 }
 
 
