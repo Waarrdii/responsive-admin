@@ -69,6 +69,7 @@ aside .top .logo img{
 --tea-rose-red: #f5cac3ff;
 --cambridge-blue: #84a59dff;
 --light-coral: #f28482ff;
+--circle1:#9b5de5;
 
 --sidebar-height : calc(100vh - 100px);
 --padding-1:1rem;
@@ -89,7 +90,7 @@ body{
 }
 .container{
 	display: grid;
-	grid-template-columns: 250px 1fr 400px;
+	grid-template-columns: .5fr 2fr .4fr;
 }
 aside{
 	height: 100vh;
@@ -172,46 +173,87 @@ aside .top .logo{
 	padding: var(--padding-1) 0 var(--padding-2);
 }
 
-
+/* card info */
 
 .main .card{
 	display: flex;
 	height: 25vh;
-	flex-wrap: wrap;
 	gap: 2rem;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
 }
 
 .data{
 	height: 100%;
+	flex: 1 1 200px;
 	background-color: #fff;
-	flex-grow: 1;
 	border-radius: 1.4rem;
 	display: flex;
 	justify-content: space-between;	
 	align-items: center;
+	flex-wrap: wrap;
+	gap: .5rem	;
 }
 
 .data div{
-	border: 1px solid black;
-	flex-grow: 1;
+	flex: 1 1 100px;
 	height: 100%;
+	padding: 1rem;
 }
 
-/* .data div img{
-	margin-left: 50%;
-	margin-top: 50%;
-	transform: translate(-50%, -50%);
-} */
+.data div svg{
+	fill: white;
+	width: 2.4rem;
+	height: 2.4rem;
+	padding: 2px;
+	border-radius: 50%;
+}
 
+.data .Sales svg{
+	background-color: #0081a7;
+}
 
-#percent circle{
+.data .expense svg{
+	background-color: #8e7dbe;
+}
+
+.data .income svg{
+	background-color: #99c1b9;
+}
+#Sales circle{
 	stroke-width: 1rem;
 	stroke: var(--light-coral);
-	fill: var(--cambridge-blue);
+	fill: none;
 	stroke-dasharray: 314.2;
 	stroke-dashoffset: 62.8;
 	
 }
+#expense circle{
+	stroke-width: 1rem;
+	stroke: var(--light-coral);
+	fill: none;
+	stroke-dasharray: 314.2;
+	stroke-dashoffset: 62.8;
+	
+}
+#income circle{
+	stroke-width: 1rem;
+	stroke: var(--light-coral);
+	fill: none;
+	stroke-dasharray: 200;
+	stroke-dashoffset: 65.6;
+	
+}
+
+.data h2{
+	font-size: 1rem;
+	font-weight: 700;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 1rem 0;
+}
+/*end of card info */
+
 
 /* sidebar kanan */
 .right-sidebar{
