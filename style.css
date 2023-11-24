@@ -187,7 +187,9 @@ aside .top .logo{
 	flex-grow: 1;
 	border-radius: 1.4rem;
 	padding: 2rem;
-	
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .data div{
@@ -204,9 +206,7 @@ aside .top .logo{
 	transform: translate(-50%, -50%);
 }
 
-.total-sales svg{
-	float: right;
-}
+
 #sales circle{
 	stroke-width: 1rem;
 	stroke: var(--light-coral);
