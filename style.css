@@ -181,36 +181,33 @@ aside .top .logo{
 	gap: 2rem;
 }
 
-.total-sales, .total-expense, .total-income{
+.data{
 	height: 100%;
 	background-color: #fff;
 	flex-grow: 1;
 	border-radius: 1.4rem;
-	padding: 2rem;
 	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	justify-content: space-between;	
+	align-items: center;
 }
 
 .data div{
-	width: 4rem;
-	height: 4rem;
-	background-color: var(--light-coral);
-	border-radius: 50%;
-	
+	border: 1px solid black;
+	flex-grow: 1;
+	height: 100%;
 }
 
-.data div img{
+/* .data div img{
 	margin-left: 50%;
 	margin-top: 50%;
 	transform: translate(-50%, -50%);
-}
+} */
 
 
-#sales circle{
+#percent circle{
 	stroke-width: 1rem;
 	stroke: var(--light-coral);
-	fill: transparent;
+	fill: var(--cambridge-blue);
 	stroke-dasharray: 314.2;
 	stroke-dashoffset: 62.8;
 	
