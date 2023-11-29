@@ -240,6 +240,11 @@ aside .top .logo{
 /*end of card info */
 
 /* data table */
+.detail h2{
+	margin: 2rem 0 1rem 0;
+	font-size: 1.3rem;
+	font-weight: 700;
+}
 table {
 	border:1px solid #b3adad;
 	border-collapse:collapse;
@@ -251,6 +256,8 @@ table th {
 	padding:5px;
 	background: #f0f0f0;
 	color: #313030;
+	font-size: 1.2rem;
+	font-weight: bold;
 }
 table td {
 	border:1px solid #b3adad;
