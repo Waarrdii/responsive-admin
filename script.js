@@ -1,4 +1,3 @@
-function generateData(){
     let product = [
         ["FUR-BO-10001798","Furniture","Bookcases","Bush Somerset Collection Bookcase",],
         ["FUR-CH-10000454","Furniture","Chairs","Hon Deluxe Fabric Upholstered Stacking Chairs Rounded Back",],
@@ -11,10 +10,15 @@ function generateData(){
         ["OFF-BI-10003910","Office Supplies","Binders","DXL Angle-View Binders with Locking Rings by Samsill",],
     ];
 
-    for (let i = 0; i<4; i++){
-        const row = document.createElement('tr');
-        for (let j = 0; j<9; j++){
-            const column = document.createElement('td');
+// const klik = document.querySelector('#click');
+window.addEventListener("load", function createTable(){
+    const table = document.querySelector("tbody");
+    for (let i = 0; i<9; i++){
+        let row = table.insertRow(i);
+        let no = row.insertCell(0).innerHTML = `${i+1}`;
+        for (let j = 0; j<4; j++){
+            let cell = row.insertCell(j + 1);
+            cell.innerHTML =  `${product[i][j]}`;
         }
     }
-};
+});
