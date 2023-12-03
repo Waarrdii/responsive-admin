@@ -1,3 +1,8 @@
+    
+
+// const klik = document.querySelector('#click');
+//window.addEventListener("load", 
+function createTable(){
     let product = [
         ["FUR-BO-10001798","Furniture","Bookcases","Bush Somerset Collection Bookcase",],
         ["FUR-CH-10000454","Furniture","Chairs","Hon Deluxe Fabric Upholstered Stacking Chairs Rounded Back",],
@@ -9,9 +14,6 @@
         ["TEC-PH-10002275","Technology","Phones","Mitel 5320 IP Phone VoIP phone",],
         ["OFF-BI-10003910","Office Supplies","Binders","DXL Angle-View Binders with Locking Rings by Samsill",],
     ];
-
-// const klik = document.querySelector('#click');
-window.addEventListener("load", function createTable(){
     const table = document.querySelector("tbody");
     for (let i = 0; i<9; i++){
         let row = table.insertRow(i);
@@ -21,4 +23,6 @@ window.addEventListener("load", function createTable(){
             cell.innerHTML =  `${product[i][j]}`;
         }
     }
-});
+};
+
+export {createTable} ;
