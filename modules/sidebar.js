@@ -5,9 +5,17 @@ function createSidebar(){
 
     for (let i = 0; i<10; i++){
         const a = document.createElement('a');
-        a.innerHTML = '<span class="material-symbols-outlined">'+ icon[i] + '</span>' + '<h3>'+nav[i];
+        
+        const span = document.createElement('span');
+        span.className = 'material-symbols-outlined';
+        span.textContent = icon[i];
 
-        sidebar.append(a)
+        const h3 = document.createElement('h3');
+        h3.textContent = nav[i];
+        
+        sidebar.append(a);
+        a.append(span, h3);
+
     }
     
 };
