@@ -202,24 +202,30 @@ aside .top .logo{
 	padding: 2rem;
 }
 
-.data div svg{
-	fill: white;
+.data .Sales span{
+	background-color: #75c1d8;
+	width: 2.4rem;
+	height: 2.4rem;
+	border-radius: 50%;
+	color: #fff;
+}
+
+.data .expense .svg-icon{
+	background-color: #8e7dbe;
 	width: 2.4rem;
 	height: 2.4rem;
 	padding: 2px;
 	border-radius: 50%;
+	filter: invert(100%);
 }
 
-.data .Sales svg{
-	background-color: #0081a7;
-}
-
-.data .expense svg{
-	background-color: #8e7dbe;
-}
-
-.data .income svg{
+.data .income .svg-icon{
 	background-color: #99c1b9;
+	width: 2.4rem;
+	height: 2.4rem;
+	padding: 2px;
+	border-radius: 50%;
+	filter: invert(100%);
 }
 
 
