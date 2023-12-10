@@ -145,14 +145,17 @@ aside .top .logo{
 	transition: .2 ease-in-out;
 	border-left: 10px solid var(--light-coral);
 	color: var(--light-coral);
+	cursor: pointer;
 }
 
 .sidebar a:hover h3{
 	color: var(--light-coral);
+	cursor: pointer;
 }
 
 .sidebar a:hover span{
 	color: var(--light-coral);
+	cursor: pointer;
 }
 .sidebar a:last-child{
 	position: absolute;
@@ -161,6 +164,10 @@ aside .top .logo{
 	margin-left : 0;
 	left: 50%;
 	transform: translateX(-50%);
+}
+
+.sidebar a:hover:last-child{
+	cursor: pointer;
 }
 
 /* main dashboard */
@@ -202,30 +209,15 @@ aside .top .logo{
 	padding: 2rem;
 }
 
-.data .Sales span{
+.data span{
 	background-color: #75c1d8;
 	width: 2.4rem;
 	height: 2.4rem;
 	border-radius: 50%;
 	color: #fff;
-}
-
-.data .expense .svg-icon{
-	background-color: #8e7dbe;
-	width: 2.4rem;
-	height: 2.4rem;
-	padding: 2px;
-	border-radius: 50%;
-	filter: invert(100%);
-}
-
-.data .income .svg-icon{
-	background-color: #99c1b9;
-	width: 2.4rem;
-	height: 2.4rem;
-	padding: 2px;
-	border-radius: 50%;
-	filter: invert(100%);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 }
 
 
@@ -243,6 +235,11 @@ aside .top .logo{
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	color: var(--onyx);
 }
+
+.data img.percent{
+	
+}
+
 /*end of card info */
 
 /* data table */
@@ -272,6 +269,7 @@ table td {
 	background: #ffffff;
 	color: #313030;
 }
+
 
 
 /* sidebar kanan */
