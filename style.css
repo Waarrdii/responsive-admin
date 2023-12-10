@@ -90,7 +90,7 @@ body{
 }
 .container{
 	display: grid;
-	grid-template-columns: .5fr 2fr .4fr;
+	grid-template-columns: .5fr 2.5fr;
 }
 aside{
 	height: 100vh;
@@ -236,9 +236,6 @@ aside .top .logo{
 	color: var(--onyx);
 }
 
-.data img.percent{
-	
-}
 
 /*end of card info */
 

@@ -3,6 +3,7 @@
 // const klik = document.querySelector('#click');
 //window.addEventListener("load", 
 function createTable(){
+    let tableHeading = ["No", "product id", "Category", "sub-category", "Product Name"]
     let product = [
         ["FUR-BO-10001798","Furniture","Bookcases","Bush Somerset Collection Bookcase",],
         ["FUR-CH-10000454","Furniture","Chairs","Hon Deluxe Fabric Upholstered Stacking Chairs Rounded Back",],
@@ -14,15 +15,38 @@ function createTable(){
         ["TEC-PH-10002275","Technology","Phones","Mitel 5320 IP Phone VoIP phone",],
         ["OFF-BI-10003910","Office Supplies","Binders","DXL Angle-View Binders with Locking Rings by Samsill",],
     ];
-    const table = document.querySelector("tbody");
+   
+    const div = document.querySelector('div.detail');
+    const h2 = document.createElement('h2');
+    h2.textContent = 'daftar produk';
+    div.appendChild(h2);
+    
+
+    const table = document.createElement('table');
+    const thead = document.createElement('thead');
+    for (let j = 0; j<5; j++){
+        const th = document.createElement('th');
+        th.textContent = tableHeading[j];
+        thead.appendChild(th);
+    }
+
+    const tbody = document.createElement('tbody');
     for (let i = 0; i<9; i++){
-        let row = table.insertRow(i);
+        let row = tbody.insertRow(i);
         let no = row.insertCell(0).innerHTML = `${i+1}`;
         for (let j = 0; j<4; j++){
             let cell = row.insertCell(j + 1);
             cell.innerHTML =  `${product[i][j]}`;
         }
     }
+
+    div.appendChild(table);
+    table.append(thead, tbody);
+
+    
+
+  
+    
 };
 
 export {createTable} ;
