@@ -1,7 +1,3 @@
-    
-
-// const klik = document.querySelector('#click');
-//window.addEventListener("load", 
 function createTable(){
     let tableHeading = ["No", "product id", "Category", "sub-category", "Product Name"]
     let product = [
@@ -16,10 +12,15 @@ function createTable(){
         ["OFF-BI-10003910","Office Supplies","Binders","DXL Angle-View Binders with Locking Rings by Samsill",],
     ];
    
-    const div = document.querySelector('div.detail');
+    const div = document.querySelector('div.main');
+
+    const detail = document.createElement('div');
+    detail.className = 'detail';
+
     const h2 = document.createElement('h2');
     h2.textContent = 'daftar produk';
-    div.appendChild(h2);
+    div.appendChild(detail);
+    detail.appendChild(h2);
     
 
     const table = document.createElement('table');
@@ -42,11 +43,7 @@ function createTable(){
 
     div.appendChild(table);
     table.append(thead, tbody);
-
-    
-
-  
-    
+ 
 };
 
 export {createTable} ;
