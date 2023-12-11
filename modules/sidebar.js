@@ -1,5 +1,8 @@
 function createSidebar(){
-    const sidebar = document.querySelector('.sidebar');
+    const aside = document.querySelector('aside');
+    const sidebar = document.createElement('div');
+    sidebar.className = 'sidebar';
+
     const icon = ['dashboard_customize', 'person','shopping_cart','monitoring','mail','inventory_2','summarize','settings','add','logout'];
     const nav = ["dasboard", "customer", "orders", "analytics", "message", "product", "reports", "settings", "add product", "log out"];
 
@@ -13,6 +16,7 @@ function createSidebar(){
         const h3 = document.createElement('h3');
         h3.textContent = nav[i];
         
+        aside.appendChild(sidebar);
         sidebar.append(a);
         a.append(span, h3);
 

@@ -1,5 +1,8 @@
 function addLogo (){
-    const logoContainer = document.querySelector('.top');
+    const logoContainer = document.querySelector('aside');
+
+    const top = document.createElement('div');
+    top.className = 'top';
 
     const logo = document.createElement('div');
     logo.classList.add('logo');
@@ -23,8 +26,8 @@ function addLogo (){
     close.className = 'close';
     close.id = 'closeBtn';
 
-
-    logoContainer.append(logo, close);
+    logoContainer.appendChild(top);
+    top.append(logo, close);
     logo.append(img,div);
     div.append(h2, line, span)
 
