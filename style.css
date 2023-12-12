@@ -258,7 +258,12 @@ table th {
 	color: #313030;
 	font-size: 1.2rem;
 	font-weight: bold;
+	cursor: pointer;
 }
+table th::after{
+	content: "\25be";
+}
+
 table td {
 	border:1px solid #b3adad;
 	text-align:center;
