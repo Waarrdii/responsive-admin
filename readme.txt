@@ -2,3 +2,5 @@
                     2. Membuat nav page pada data table, tampilkan maksimal 5 data per halaman.
                     3. Membuat search, filter dan sort di tabel; 
 sorting table https://codepen.io/dcode-software/pen/zYGOrzK
+
+/* https://nikitahl.github.io/svg-circle-progress-generator/ */

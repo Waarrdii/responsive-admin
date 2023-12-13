@@ -260,9 +260,8 @@ table th {
 	font-weight: bold;
 	cursor: pointer;
 }
-table th::after{
-	content: "\25be";
-}
+
+
 
 table td {
 	border:1px solid #b3adad;
@@ -292,4 +291,3 @@ table td {
 
 }
 
-/* https://nikitahl.github.io/svg-circle-progress-generator/ */
