@@ -4,3 +4,6 @@
 sorting table https://codepen.io/dcode-software/pen/zYGOrzK
 
 /* https://nikitahl.github.io/svg-circle-progress-generator/ */
+
+./sort.js =>th diganti ths akhirnya jalan, berarti ada konflik antara script functionnya atau tidak mengenali ketika disebut th, th yang mana.
+lanjut tahap klik pertama segitiga ke atas, klik ke dua segitiga kebawah, dan style hanya muncul di th yang dklick saja.
