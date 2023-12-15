@@ -261,6 +261,9 @@ table th {
 	cursor: pointer;
 }
 
+.sorted::after{
+	content: "\25B2";
+}
 
 
 table td {

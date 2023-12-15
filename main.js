@@ -13,3 +13,4 @@ window.addEventListener("load", addLogo);
 window.addEventListener("load", createSidebar);
 window.addEventListener("load", createCard);
 window.addEventListener("load", createTable);
+window.addEventListener("load", sort);
