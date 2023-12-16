@@ -250,6 +250,7 @@ table {
 	border-collapse:collapse;
 	padding:5px;
 	width: 100%;
+	table-layout: fixed;
 }
 table th {
 	border:1px solid #b3adad;
@@ -259,6 +260,11 @@ table th {
 	font-size: 1.2rem;
 	font-weight: bold;
 	cursor: pointer;
+	user-select: none;
+}
+
+table th:first-child {
+	width: 40px;
 }
 
 .asc::after{
