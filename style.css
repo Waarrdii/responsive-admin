@@ -261,10 +261,13 @@ table th {
 	cursor: pointer;
 }
 
-.sorted::after{
-	content: "\25B2";
+.asc::after{
+	content: "\25B4";
 }
 
+.desc::after{
+	content: "\25BE";
+}
 
 table td {
 	border:1px solid #b3adad;
